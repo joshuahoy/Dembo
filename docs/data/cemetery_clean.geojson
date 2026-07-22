@@ -1,0 +1,3130 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525561,
+          46.159676
+        ]
+      },
+      "properties": {
+        "source_sheet": "Coordinate Points",
+        "point_type": "anchor",
+        "point_id": 1302,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": "Southern Grid Boundary Line",
+        "is_anchor": true,
+        "elevation": 8.667322
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525485,
+          46.159668
+        ]
+      },
+      "properties": {
+        "source_sheet": "Coordinate Points",
+        "point_type": "anchor",
+        "point_id": 1303,
+        "northing_y": 0.0,
+        "easting_x": 4.0,
+        "category": null,
+        "grid_context": "Southeast Grid Corner Point",
+        "is_anchor": true,
+        "elevation": 10.409498
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525539,
+          46.159854
+        ]
+      },
+      "properties": {
+        "source_sheet": "Coordinate Points",
+        "point_type": "anchor",
+        "point_id": 1304,
+        "northing_y": 12.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": "Northern Grid Boundary Line",
+        "is_anchor": true,
+        "elevation": 8.32813
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525539,
+          46.15974
+        ]
+      },
+      "properties": {
+        "source_sheet": "Coordinate Points",
+        "point_type": "anchor",
+        "point_id": 1305,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": "Dembo's Grave Stone",
+        "is_anchor": true,
+        "elevation": 7.020559
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525444,
+          46.159382
+        ]
+      },
+      "properties": {
+        "source_sheet": "Coordinate Points",
+        "point_type": "anchor",
+        "point_id": 1306,
+        "northing_y": null,
+        "easting_x": null,
+        "category": null,
+        "grid_context": "Outside Grid - Shoreline Stone",
+        "is_anchor": true,
+        "elevation": 8.99404
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 1,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 2,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 3,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 4,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 5,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 6,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 7,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 8,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 9,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 10,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 11,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 12,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 13,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555314285715,
+          46.159692749999984
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 14,
+        "northing_y": 1.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555314285715,
+          46.159692749999984
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 15,
+        "northing_y": 1.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555314285715,
+          46.159692749999984
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 16,
+        "northing_y": 1.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555314285715,
+          46.159692749999984
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 17,
+        "northing_y": 1.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555157142857,
+          46.15970749999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 18,
+        "northing_y": 2.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52552833333333,
+          46.15970416666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 19,
+        "northing_y": 2.0,
+        "easting_x": 2.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52550509523809,
+          46.15970083333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 20,
+        "northing_y": 2.0,
+        "easting_x": 3.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557323809524,
+          46.15972558333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 21,
+        "northing_y": 3.0,
+        "easting_x": 0.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 22,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 23,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 24,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 25,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 26,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 27,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554057142857,
+          46.15981075
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 28,
+        "northing_y": 9.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52556380952381,
+          46.15981408333332
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 29,
+        "northing_y": 9.0,
+        "easting_x": 0.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554057142857,
+          46.15981075
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 30,
+        "northing_y": 9.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554057142857,
+          46.15981075
+        ]
+      },
+      "properties": {
+        "source_sheet": "Surface Stones ",
+        "point_type": "surface",
+        "point_id": 31,
+        "northing_y": 9.0,
+        "easting_x": 1.0,
+        "category": null,
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553585714286,
+          46.159855
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 1,
+        "northing_y": 12.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 2,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 3,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 4,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 5,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 6,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 7,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 8,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 9,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 10,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 11,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 12,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 13,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 14,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 15,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 16,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 17,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557638095239,
+          46.15969608333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 18,
+        "northing_y": 1.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557638095239,
+          46.15969608333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 19,
+        "northing_y": 1.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557638095239,
+          46.15969608333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 20,
+        "northing_y": 1.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557638095239,
+          46.15969608333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 21,
+        "northing_y": 1.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 22,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 23,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 24,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 25,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 26,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 27,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 28,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554057142857,
+          46.15981075
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 29,
+        "northing_y": 9.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554057142857,
+          46.15981075
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 30,
+        "northing_y": 9.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525539,
+          46.1598255
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 31,
+        "northing_y": 10.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525539,
+          46.1598255
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 32,
+        "northing_y": 10.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525539,
+          46.1598255
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 33,
+        "northing_y": 10.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525539,
+          46.1598255
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 34,
+        "northing_y": 10.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554057142857,
+          46.15981075
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 35,
+        "northing_y": 9.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525539,
+          46.1598255
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 36,
+        "northing_y": 10.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 37,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 38,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 39,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 40,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 41,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553585714286,
+          46.159855
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 42,
+        "northing_y": 12.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 43,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 44,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553742857143,
+          46.15984025
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 45,
+        "northing_y": 11.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 46,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 47,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 48,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 49,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557795238096,
+          46.1596813333333
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 50,
+        "northing_y": 0.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 51,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 52,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 53,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 54,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 55,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555471428572,
+          46.15967799999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 56,
+        "northing_y": 0.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 57,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 58,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 59,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 60,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 61,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 62,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 63,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52553147619047,
+          46.15967466666665
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 64,
+        "northing_y": 0.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 65,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 66,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 67,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 68,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 69,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 70,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 71,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 72,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 73,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 74,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525508238095235,
+          46.159671333333335
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 75,
+        "northing_y": 0.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 76,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 77,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 78,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 79,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525506666666665,
+          46.15968608333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 80,
+        "northing_y": 1.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 81,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 82,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 83,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 84,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 85,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 86,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 87,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255299047619,
+          46.15968941666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 88,
+        "northing_y": 1.0,
+        "easting_x": 2.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555314285715,
+          46.159692749999984
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 89,
+        "northing_y": 1.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555314285715,
+          46.159692749999984
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 90,
+        "northing_y": 1.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555314285715,
+          46.159692749999984
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 91,
+        "northing_y": 1.0,
+        "easting_x": 1.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557638095239,
+          46.15969608333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 92,
+        "northing_y": 1.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557638095239,
+          46.15969608333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 93,
+        "northing_y": 1.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557638095239,
+          46.15969608333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 94,
+        "northing_y": 1.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 95,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 96,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 97,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557480952381,
+          46.15971083333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 98,
+        "northing_y": 2.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555157142857,
+          46.15970749999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 99,
+        "northing_y": 2.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555157142857,
+          46.15970749999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 100,
+        "northing_y": 2.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52555157142857,
+          46.15970749999998
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 101,
+        "northing_y": 2.0,
+        "easting_x": 1.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52552833333333,
+          46.15970416666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 102,
+        "northing_y": 2.0,
+        "easting_x": 2.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52550509523809,
+          46.15970083333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 103,
+        "northing_y": 2.0,
+        "easting_x": 3.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52550509523809,
+          46.15970083333334
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 104,
+        "northing_y": 2.0,
+        "easting_x": 3.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 105,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 106,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 107,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 108,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 109,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52557166666667,
+          46.15974033333331
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 110,
+        "northing_y": 4.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 111,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 112,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 113,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 114,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 115,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52554842857143,
+          46.159736999999986
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 116,
+        "northing_y": 4.0,
+        "easting_x": 1.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.52552361904762,
+          46.159748416666666
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 117,
+        "northing_y": 5.0,
+        "easting_x": 2.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.525546857142864,
+          46.15975174999999
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 118,
+        "northing_y": 5.0,
+        "easting_x": 1.0,
+        "category": "∆",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255700952381,
+          46.159755083333316
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 119,
+        "northing_y": 5.0,
+        "easting_x": 0.0,
+        "category": "○",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.5255700952381,
+          46.159755083333316
+        ]
+      },
+      "properties": {
+        "source_sheet": "Subterranean Points",
+        "point_type": "subterranean",
+        "point_id": 120,
+        "northing_y": 5.0,
+        "easting_x": 0.0,
+        "category": "□",
+        "grid_context": null,
+        "is_anchor": false
+      }
+    }
+  ]
+}

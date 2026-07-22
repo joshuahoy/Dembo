@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>St. Andrew's Point Cemetery - 3D Terrain Map</title>
+  <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #12202a;
+      --panel: rgba(255, 251, 244, 0.95);
+      --edge: #cebfa8;
+    }
+    html, body { margin: 0; padding: 0; height: 100%; }
+    body { font-family: "Segoe UI", Tahoma, sans-serif; color: var(--ink); }
+    #map { position: absolute; inset: 0; }
+    .panel {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+      background: var(--panel);
+      border: 1px solid var(--edge);
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      padding: 10px 12px;
+      max-width: min(92vw, 420px);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+    h1 { margin: 0 0 6px; font-size: 15px; }
+    .legend { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="panel">
+    <h1>St. Andrew's Point - 3D Terrain</h1>
+    <div>Terrain uses open Terrarium elevation tiles and no API keys.</div>
+    <div class="legend">
+      <span><span class="swatch" style="background:#f59e0b"></span>Surface</span>
+      <span><span class="swatch" style="background:#22c55e"></span>Subterranean</span>
+      <span><span class="swatch" style="background:#ef4444"></span>Anchor</span>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script>
+    const map = new maplibregl.Map({
+      container: 'map',
+      center: [-62.52552, 46.15973],
+      zoom: 16.8,
+      pitch: 65,
+      bearing: 18,
+      maxPitch: 80,
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: 'raster',
+            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            tileSize: 256,
+            attribution: '© OpenStreetMap contributors'
+          },
+          terrain: {
+            type: 'raster-dem',
+            tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+            tileSize: 256,
+            encoding: 'terrarium',
+            maxzoom: 14,
+            attribution: 'Elevation: Mapzen Terrarium (AWS mirror)'
+          }
+        },
+        layers: [
+          { id: 'osm', type: 'raster', source: 'osm' }
+        ],
+        terrain: { source: 'terrain', exaggeration: 1.55 }
+      }
+    });
+
+    map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
+    map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+
+    function colorFor(type) {
+      if (type === 'surface') return '#f59e0b';
+      if (type === 'subterranean') return '#22c55e';
+      return '#ef4444';
+    }
+
+    map.on('load', async () => {
+      const response = await fetch('./data/cemetery_clean.geojson');
+      const gj = await response.json();
+
+      const styled = {
+        type: 'FeatureCollection',
+        features: gj.features.map((f) => ({
+          ...f,
+          properties: {
+            ...f.properties,
+            markerColor: colorFor(f.properties?.point_type)
+          }
+        }))
+      };
+
+      map.addSource('cemetery-points', { type: 'geojson', data: styled });
+
+      map.addLayer({
+        id: 'point-halo',
+        type: 'circle',
+        source: 'cemetery-points',
+        paint: {
+          'circle-color': '#081018',
+          'circle-radius': [
+            'interpolate', ['linear'], ['zoom'],
+            14, 2,
+            18, 4
+          ],
+          'circle-opacity': 0.6
+        }
+      });
+
+      map.addLayer({
+        id: 'point-core',
+        type: 'circle',
+        source: 'cemetery-points',
+        paint: {
+          'circle-color': ['get', 'markerColor'],
+          'circle-radius': [
+            'interpolate', ['linear'], ['zoom'],
+            14, 1.5,
+            18, 3
+          ],
+          'circle-opacity': 0.95,
+          'circle-stroke-width': 0.5,
+          'circle-stroke-color': '#ffffff'
+        }
+      });
+
+      map.on('click', 'point-core', (e) => {
+        const feature = e.features && e.features[0];
+        if (!feature) return;
+        const p = feature.properties || {};
+        const html = [
+          `<b>${p.point_type || 'point'} #${p.point_id || ''}</b>`,
+          `Sheet: ${p.source_sheet || '-'}`,
+          `Grid (Y/X): ${p.northing_y || '-'} / ${p.easting_x || '-'}`,
+          p.category ? `Category: ${p.category}` : null,
+          p.grid_context ? `Context: ${p.grid_context}` : null
+        ].filter(Boolean).join('<br>');
+
+        new maplibregl.Popup({ closeButton: true })
+          .setLngLat(e.lngLat)
+          .setHTML(html)
+          .addTo(map);
+      });
+
+      map.on('mouseenter', 'point-core', () => map.getCanvas().style.cursor = 'pointer');
+      map.on('mouseleave', 'point-core', () => map.getCanvas().style.cursor = '');
+
+      const bounds = new maplibregl.LngLatBounds();
+      for (const f of styled.features) {
+        const c = f.geometry.coordinates;
+        bounds.extend([c[0], c[1]]);
+      }
+      if (!bounds.isEmpty()) {
+        map.fitBounds(bounds, { padding: 50, duration: 1200, pitch: 62, bearing: 20 });
+      }
+    });
+  </script>
+</body>
+</html>

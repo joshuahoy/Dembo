@@ -1,0 +1,18 @@
+St. Andrew's Point Coordinate Validation Report
+================================================
+Source workbook: St. Andrew's Point Pioneer Cemetery Data.xlsx
+
+Anchor fit summary
+- Anchor points used: 4
+- Latitude fit coeffs: c0=46.1596813333, c1=0.0000147500, c2=-0.0000033333
+- Longitude fit coeffs: c0=-62.5255779524, c1=0.0000015714, c2=0.0000232381
+- Max |lat residual| on anchors: 0.0000030000 deg
+- Max |lon residual| on anchors: 0.0000094286 deg
+
+Dataset summary
+- Total exported points: 156
+- Anchor points exported: 5
+- Surface points exported: 31
+- Subterranean points exported: 120
+- Coordinate sheet rows missing lat/lon: 0
+- Out-of-PEI bound points: 0

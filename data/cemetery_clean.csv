@@ -1,0 +1,157 @@
+source_sheet,point_type,point_id,northing_y,easting_x,latitude,longitude,elevation,category,grid_context,is_anchor
+Coordinate Points,anchor,1302,0.0,1.0,46.159676,-62.525561,8.667322,,Southern Grid Boundary Line,True
+Coordinate Points,anchor,1303,0.0,4.0,46.159668,-62.525485,10.409498,,Southeast Grid Corner Point,True
+Coordinate Points,anchor,1304,12.0,1.0,46.159854,-62.525539,8.32813,,Northern Grid Boundary Line,True
+Coordinate Points,anchor,1305,4.0,1.0,46.15974,-62.525539,7.020559,,Dembo's Grave Stone,True
+Coordinate Points,anchor,1306,,,46.159382,-62.525444,8.99404,,Outside Grid - Shoreline Stone,True
+Surface Stones ,surface,1,0.0,0.0,46.1596813333333,-62.52557795238096,,,,False
+Surface Stones ,surface,2,0.0,1.0,46.15967799999998,-62.52555471428572,,,,False
+Surface Stones ,surface,3,0.0,1.0,46.15967799999998,-62.52555471428572,,,,False
+Surface Stones ,surface,4,0.0,1.0,46.15967799999998,-62.52555471428572,,,,False
+Surface Stones ,surface,5,0.0,2.0,46.15967466666665,-62.52553147619047,,,,False
+Surface Stones ,surface,6,0.0,2.0,46.15967466666665,-62.52553147619047,,,,False
+Surface Stones ,surface,7,0.0,3.0,46.159671333333335,-62.525508238095235,,,,False
+Surface Stones ,surface,8,1.0,3.0,46.15968608333334,-62.525506666666665,,,,False
+Surface Stones ,surface,9,1.0,3.0,46.15968608333334,-62.525506666666665,,,,False
+Surface Stones ,surface,10,1.0,3.0,46.15968608333334,-62.525506666666665,,,,False
+Surface Stones ,surface,11,1.0,2.0,46.15968941666666,-62.5255299047619,,,,False
+Surface Stones ,surface,12,1.0,2.0,46.15968941666666,-62.5255299047619,,,,False
+Surface Stones ,surface,13,1.0,2.0,46.15968941666666,-62.5255299047619,,,,False
+Surface Stones ,surface,14,1.0,1.0,46.159692749999984,-62.52555314285715,,,,False
+Surface Stones ,surface,15,1.0,1.0,46.159692749999984,-62.52555314285715,,,,False
+Surface Stones ,surface,16,1.0,1.0,46.159692749999984,-62.52555314285715,,,,False
+Surface Stones ,surface,17,1.0,1.0,46.159692749999984,-62.52555314285715,,,,False
+Surface Stones ,surface,18,2.0,1.0,46.15970749999998,-62.52555157142857,,,,False
+Surface Stones ,surface,19,2.0,2.0,46.15970416666666,-62.52552833333333,,,,False
+Surface Stones ,surface,20,2.0,3.0,46.15970083333334,-62.52550509523809,,,,False
+Surface Stones ,surface,21,3.0,0.0,46.15972558333331,-62.52557323809524,,,,False
+Surface Stones ,surface,22,4.0,0.0,46.15974033333331,-62.52557166666667,,,,False
+Surface Stones ,surface,23,4.0,0.0,46.15974033333331,-62.52557166666667,,,,False
+Surface Stones ,surface,24,4.0,1.0,46.159736999999986,-62.52554842857143,,,,False
+Surface Stones ,surface,25,4.0,1.0,46.159736999999986,-62.52554842857143,,,,False
+Surface Stones ,surface,26,4.0,1.0,46.159736999999986,-62.52554842857143,,,,False
+Surface Stones ,surface,27,4.0,1.0,46.159736999999986,-62.52554842857143,,,,False
+Surface Stones ,surface,28,9.0,1.0,46.15981075,-62.52554057142857,,,,False
+Surface Stones ,surface,29,9.0,0.0,46.15981408333332,-62.52556380952381,,,,False
+Surface Stones ,surface,30,9.0,1.0,46.15981075,-62.52554057142857,,,,False
+Surface Stones ,surface,31,9.0,1.0,46.15981075,-62.52554057142857,,,,False
+Subterranean Points,subterranean,1,12.0,1.0,46.159855,-62.52553585714286,,∆,,False
+Subterranean Points,subterranean,2,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,3,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,4,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,5,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,6,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,7,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,8,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,9,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,10,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,11,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,12,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,13,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,14,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,15,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,16,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,17,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,18,1.0,0.0,46.15969608333331,-62.52557638095239,,∆,,False
+Subterranean Points,subterranean,19,1.0,0.0,46.15969608333331,-62.52557638095239,,∆,,False
+Subterranean Points,subterranean,20,1.0,0.0,46.15969608333331,-62.52557638095239,,∆,,False
+Subterranean Points,subterranean,21,1.0,0.0,46.15969608333331,-62.52557638095239,,∆,,False
+Subterranean Points,subterranean,22,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,23,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,24,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,25,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,26,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,27,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,28,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,29,9.0,1.0,46.15981075,-62.52554057142857,,○,,False
+Subterranean Points,subterranean,30,9.0,1.0,46.15981075,-62.52554057142857,,○,,False
+Subterranean Points,subterranean,31,10.0,1.0,46.1598255,-62.525539,,○,,False
+Subterranean Points,subterranean,32,10.0,1.0,46.1598255,-62.525539,,∆,,False
+Subterranean Points,subterranean,33,10.0,1.0,46.1598255,-62.525539,,∆,,False
+Subterranean Points,subterranean,34,10.0,1.0,46.1598255,-62.525539,,∆,,False
+Subterranean Points,subterranean,35,9.0,1.0,46.15981075,-62.52554057142857,,○,,False
+Subterranean Points,subterranean,36,10.0,1.0,46.1598255,-62.525539,,∆,,False
+Subterranean Points,subterranean,37,11.0,1.0,46.15984025,-62.52553742857143,,∆,,False
+Subterranean Points,subterranean,38,11.0,1.0,46.15984025,-62.52553742857143,,∆,,False
+Subterranean Points,subterranean,39,11.0,1.0,46.15984025,-62.52553742857143,,∆,,False
+Subterranean Points,subterranean,40,11.0,1.0,46.15984025,-62.52553742857143,,○,,False
+Subterranean Points,subterranean,41,11.0,1.0,46.15984025,-62.52553742857143,,○,,False
+Subterranean Points,subterranean,42,12.0,1.0,46.159855,-62.52553585714286,,○,,False
+Subterranean Points,subterranean,43,11.0,1.0,46.15984025,-62.52553742857143,,∆,,False
+Subterranean Points,subterranean,44,11.0,1.0,46.15984025,-62.52553742857143,,∆,,False
+Subterranean Points,subterranean,45,11.0,1.0,46.15984025,-62.52553742857143,,∆,,False
+Subterranean Points,subterranean,46,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,47,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,48,0.0,0.0,46.1596813333333,-62.52557795238096,,∆,,False
+Subterranean Points,subterranean,49,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,50,0.0,0.0,46.1596813333333,-62.52557795238096,,○,,False
+Subterranean Points,subterranean,51,0.0,1.0,46.15967799999998,-62.52555471428572,,○,,False
+Subterranean Points,subterranean,52,0.0,1.0,46.15967799999998,-62.52555471428572,,∆,,False
+Subterranean Points,subterranean,53,0.0,1.0,46.15967799999998,-62.52555471428572,,○,,False
+Subterranean Points,subterranean,54,0.0,1.0,46.15967799999998,-62.52555471428572,,○,,False
+Subterranean Points,subterranean,55,0.0,1.0,46.15967799999998,-62.52555471428572,,○,,False
+Subterranean Points,subterranean,56,0.0,1.0,46.15967799999998,-62.52555471428572,,∆,,False
+Subterranean Points,subterranean,57,0.0,2.0,46.15967466666665,-62.52553147619047,,○,,False
+Subterranean Points,subterranean,58,0.0,2.0,46.15967466666665,-62.52553147619047,,○,,False
+Subterranean Points,subterranean,59,0.0,2.0,46.15967466666665,-62.52553147619047,,○,,False
+Subterranean Points,subterranean,60,0.0,2.0,46.15967466666665,-62.52553147619047,,○,,False
+Subterranean Points,subterranean,61,0.0,2.0,46.15967466666665,-62.52553147619047,,∆,,False
+Subterranean Points,subterranean,62,0.0,2.0,46.15967466666665,-62.52553147619047,,○,,False
+Subterranean Points,subterranean,63,0.0,2.0,46.15967466666665,-62.52553147619047,,○,,False
+Subterranean Points,subterranean,64,0.0,2.0,46.15967466666665,-62.52553147619047,,○,,False
+Subterranean Points,subterranean,65,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,66,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,67,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,68,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,69,0.0,3.0,46.159671333333335,-62.525508238095235,,○,,False
+Subterranean Points,subterranean,70,0.0,3.0,46.159671333333335,-62.525508238095235,,○,,False
+Subterranean Points,subterranean,71,0.0,3.0,46.159671333333335,-62.525508238095235,,□,,False
+Subterranean Points,subterranean,72,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,73,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,74,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,75,0.0,3.0,46.159671333333335,-62.525508238095235,,∆,,False
+Subterranean Points,subterranean,76,1.0,3.0,46.15968608333334,-62.525506666666665,,○,,False
+Subterranean Points,subterranean,77,1.0,3.0,46.15968608333334,-62.525506666666665,,○,,False
+Subterranean Points,subterranean,78,1.0,3.0,46.15968608333334,-62.525506666666665,,○,,False
+Subterranean Points,subterranean,79,1.0,3.0,46.15968608333334,-62.525506666666665,,∆,,False
+Subterranean Points,subterranean,80,1.0,3.0,46.15968608333334,-62.525506666666665,,∆,,False
+Subterranean Points,subterranean,81,1.0,2.0,46.15968941666666,-62.5255299047619,,○,,False
+Subterranean Points,subterranean,82,1.0,2.0,46.15968941666666,-62.5255299047619,,○,,False
+Subterranean Points,subterranean,83,1.0,2.0,46.15968941666666,-62.5255299047619,,∆,,False
+Subterranean Points,subterranean,84,1.0,2.0,46.15968941666666,-62.5255299047619,,○,,False
+Subterranean Points,subterranean,85,1.0,2.0,46.15968941666666,-62.5255299047619,,○,,False
+Subterranean Points,subterranean,86,1.0,2.0,46.15968941666666,-62.5255299047619,,○,,False
+Subterranean Points,subterranean,87,1.0,2.0,46.15968941666666,-62.5255299047619,,○,,False
+Subterranean Points,subterranean,88,1.0,2.0,46.15968941666666,-62.5255299047619,,○,,False
+Subterranean Points,subterranean,89,1.0,1.0,46.159692749999984,-62.52555314285715,,∆,,False
+Subterranean Points,subterranean,90,1.0,1.0,46.159692749999984,-62.52555314285715,,○,,False
+Subterranean Points,subterranean,91,1.0,1.0,46.159692749999984,-62.52555314285715,,□,,False
+Subterranean Points,subterranean,92,1.0,0.0,46.15969608333331,-62.52557638095239,,○,,False
+Subterranean Points,subterranean,93,1.0,0.0,46.15969608333331,-62.52557638095239,,○,,False
+Subterranean Points,subterranean,94,1.0,0.0,46.15969608333331,-62.52557638095239,,∆,,False
+Subterranean Points,subterranean,95,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,96,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,97,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,98,2.0,0.0,46.15971083333331,-62.52557480952381,,∆,,False
+Subterranean Points,subterranean,99,2.0,1.0,46.15970749999998,-62.52555157142857,,∆,,False
+Subterranean Points,subterranean,100,2.0,1.0,46.15970749999998,-62.52555157142857,,∆,,False
+Subterranean Points,subterranean,101,2.0,1.0,46.15970749999998,-62.52555157142857,,□,,False
+Subterranean Points,subterranean,102,2.0,2.0,46.15970416666666,-62.52552833333333,,□,,False
+Subterranean Points,subterranean,103,2.0,3.0,46.15970083333334,-62.52550509523809,,□,,False
+Subterranean Points,subterranean,104,2.0,3.0,46.15970083333334,-62.52550509523809,,∆,,False
+Subterranean Points,subterranean,105,4.0,0.0,46.15974033333331,-62.52557166666667,,∆,,False
+Subterranean Points,subterranean,106,4.0,0.0,46.15974033333331,-62.52557166666667,,∆,,False
+Subterranean Points,subterranean,107,4.0,0.0,46.15974033333331,-62.52557166666667,,∆,,False
+Subterranean Points,subterranean,108,4.0,0.0,46.15974033333331,-62.52557166666667,,○,,False
+Subterranean Points,subterranean,109,4.0,0.0,46.15974033333331,-62.52557166666667,,○,,False
+Subterranean Points,subterranean,110,4.0,0.0,46.15974033333331,-62.52557166666667,,○,,False
+Subterranean Points,subterranean,111,4.0,1.0,46.159736999999986,-62.52554842857143,,∆,,False
+Subterranean Points,subterranean,112,4.0,1.0,46.159736999999986,-62.52554842857143,,□,,False
+Subterranean Points,subterranean,113,4.0,1.0,46.159736999999986,-62.52554842857143,,○,,False
+Subterranean Points,subterranean,114,4.0,1.0,46.159736999999986,-62.52554842857143,,□,,False
+Subterranean Points,subterranean,115,4.0,1.0,46.159736999999986,-62.52554842857143,,∆,,False
+Subterranean Points,subterranean,116,4.0,1.0,46.159736999999986,-62.52554842857143,,□,,False
+Subterranean Points,subterranean,117,5.0,2.0,46.159748416666666,-62.52552361904762,,□,,False
+Subterranean Points,subterranean,118,5.0,1.0,46.15975174999999,-62.525546857142864,,∆,,False
+Subterranean Points,subterranean,119,5.0,0.0,46.159755083333316,-62.5255700952381,,○,,False
+Subterranean Points,subterranean,120,5.0,0.0,46.159755083333316,-62.5255700952381,,□,,False

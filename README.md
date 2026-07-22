@@ -1,0 +1,54 @@
+# St. Andrew's Point Pioneer Cemetery Interactive Maps
+
+This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xlsx` into georeferenced point data and publishes interactive 2D and 3D maps that can be hosted on GitHub Pages without API keys.
+
+## What is included
+
+- `scripts/00_inspect_excel.py` - quick workbook schema inspection.
+- `scripts/01_validate_and_export.py` - coordinate validation, georeferencing, and export.
+- `data/cemetery_clean.csv` - cleaned tabular output.
+- `data/cemetery_clean.geojson` - canonical geospatial output.
+- `validation/coordinate_report.txt` - QA summary and transform residuals.
+- `docs/index.html` - landing page for GitHub Pages.
+- `docs/map2d.html` - 2D interactive map (Leaflet).
+- `docs/map3d.html` - 3D interactive terrain map (MapLibre).
+- `docs/data/cemetery_clean.geojson` - hosted map data used by 2D and 3D pages.
+
+## Run locally
+
+1. Ensure Python is available (the current workspace uses Python 3.14).
+2. Rebuild outputs:
+
+```powershell
+C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe scripts/01_validate_and_export.py
+```
+
+3. Open `docs/index.html` in a local web server for reliable fetch behavior:
+
+```powershell
+C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe -m http.server 8080
+```
+
+4. Visit `http://localhost:8080/docs/`.
+
+## Publish on GitHub Pages (docs on main)
+
+1. Push this folder contents to the `main` branch of `joshuahoy/Dembo`.
+2. In repository Settings -> Pages:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/docs`
+3. Save settings and wait for the Pages URL to build.
+
+## Data method summary
+
+- The workbook includes local grid coordinates (`Northing (Y)`, `Easting (X)`) for most points.
+- The `Coordinate Points` sheet contains anchor points with known latitude and longitude.
+- Script `01_validate_and_export.py` fits an affine-like plane mapping from local grid `(Y, X)` to `(lat, lon)` using least-squares over anchor points.
+- Surface and subterranean points are projected into WGS84 and exported.
+
+## Attribution
+
+- OpenStreetMap contributors for basemap tiles.
+- Wikimedia hillshading tiles for 2D terrain shading.
+- Mapzen Terrarium elevation tiles (AWS public mirror) for 3D terrain.
