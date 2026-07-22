@@ -48,7 +48,7 @@
 <body>
   <header>
     <h1>St. Andrew's Point Pioneer Cemetery - 2D Interactive Map</h1>
-    <p class="subtle">OpenStreetMap base, hillshade overlay, and georeferenced points derived from grid coordinates.</p>
+    <p class="subtle">OpenTopoMap base with optional hillshade overlay and georeferenced points derived from grid coordinates.</p>
   </header>
   <div id="map"></div>
 
@@ -61,13 +61,19 @@
       maxZoom: 20
     });
 
+    const topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+      subdomains: ['a', 'b', 'c'],
+      maxZoom: 17,
+      attribution: '&copy; OpenStreetMap contributors, SRTM | Map style: OpenTopoMap (CC-BY-SA)'
+    }).addTo(map);
+
     const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 20,
       attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+    });
 
     const hillshade = L.tileLayer('https://tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png', {
-      opacity: 0.35,
+      opacity: 0.45,
       maxZoom: 18,
       attribution: 'Hillshade: Wikimedia Labs'
     }).addTo(map);
@@ -119,10 +125,11 @@
 
     L.control.layers(
       {
-        'OpenStreetMap': osm,
-        'Hillshade': hillshade
+        'OpenTopoMap': topo,
+        'OpenStreetMap': osm
       },
       {
+        'Relief hillshade': hillshade,
         'Surface Stones': surfaceLayer,
         'Subterranean Points': subterraneanLayer,
         'Anchor Coordinates': anchorLayer

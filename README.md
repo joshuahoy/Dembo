@@ -10,8 +10,8 @@ This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xls
 - `data/cemetery_clean.geojson` - canonical geospatial output.
 - `validation/coordinate_report.txt` - QA summary and transform residuals.
 - `docs/index.html` - landing page for GitHub Pages.
-- `docs/map2d.html` - 2D interactive map (Leaflet).
-- `docs/map3d.html` - 3D interactive terrain map (MapLibre).
+- `docs/map2d.html` - 2D interactive topographic map (Leaflet + OpenTopoMap).
+- `docs/map3d.html` - 3D interactive topographic terrain map (MapLibre + hillshade).
 - `docs/data/cemetery_clean.geojson` - hosted map data used by 2D and 3D pages.
 
 ## Run locally
@@ -49,6 +49,7 @@ C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe -m http.serv
 
 ## Attribution
 
-- OpenStreetMap contributors for basemap tiles.
+- OpenStreetMap contributors for map data and alternate raster tiles.
+- OpenTopoMap (CC-BY-SA) style tiles with SRTM terrain context.
 - Wikimedia hillshading tiles for 2D terrain shading.
 - Mapzen Terrarium elevation tiles (AWS public mirror) for 3D terrain.
