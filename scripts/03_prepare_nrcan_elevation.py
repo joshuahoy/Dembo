@@ -43,8 +43,9 @@ def bbox_from_points() -> Tuple[float, float, float, float]:
     min_lon, max_lon = min(lons), max(lons)
     min_lat, max_lat = min(lats), max(lats)
 
-    # Add ~220m pad for contextual terrain
-    pad_deg = 0.0020
+    # Add a wider pad so hillshade edge sits well outside the cemetery view.
+    # At this latitude, 0.01 deg is roughly 750m N/S and ~770m E/W.
+    pad_deg = 0.0100
     return (min_lon - pad_deg, min_lat - pad_deg, max_lon + pad_deg, max_lat + pad_deg)
 
 
