@@ -12,7 +12,7 @@ https://joshuahoy.github.io/Dembo/
 - `data/cemetery_clean.geojson` - canonical geospatial output.
 - `validation/coordinate_report.txt` - QA summary and transform residuals.
 - `docs/index.html` - primary 2D interactive topographic map at the GitHub Pages root URL.
-- `docs/map2d.html` - alternate direct 2D map page (same data/layers).
+- `docs/map2d.html` - legacy path that now redirects to the root map (`docs/index.html`).
 - `docs/data/cemetery_clean.geojson` - hosted map data used by the 2D page.
 - `docs/tiles/nrcan_hillshade/` - local XYZ hillshade PNG tiles (generated).
 

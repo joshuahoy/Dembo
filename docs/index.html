@@ -41,8 +41,48 @@
       box-shadow: 0 3px 12px rgba(0,0,0,0.15);
       font-size: 12px;
     }
+    .overview-card {
+      background: var(--card);
+      border: 1px solid #cabfae;
+      border-radius: 10px;
+      padding: 8px;
+      width: 260px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.2);
+    }
+    .overview-title {
+      margin: 0 0 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #334155;
+      letter-spacing: 0.01em;
+    }
+    .overview-map {
+      width: 100%;
+      height: 190px;
+      border: 1px solid #d8cdbd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #eceff1;
+    }
+    .overview-note {
+      margin-top: 6px;
+      font-size: 11px;
+      color: #475569;
+    }
     .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; }
     .subtle { color:#46535b; }
+    @media (max-width: 720px) {
+      .overview-card {
+        width: 200px;
+        padding: 6px;
+      }
+      .overview-map {
+        height: 140px;
+      }
+      .overview-note {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -83,6 +123,12 @@
     const surfaceLayer = L.layerGroup().addTo(map);
     const subterraneanLayer = L.layerGroup().addTo(map);
     const anchorLayer = L.layerGroup().addTo(map);
+    let overviewMap = null;
+
+    const lidarCoverageBounds = L.latLngBounds(
+      [46.149382, -62.535577952380955],
+      [46.169855, -62.515444]
+    );
 
     function popupHtml(props) {
       const parts = [
@@ -100,6 +146,80 @@
       if (type === 'surface') return { radius: 5, color: '#1f2937', weight: 1, fillColor: '#f59e0b', fillOpacity: 0.9 };
       if (type === 'subterranean') return { radius: 4, color: '#0b2239', weight: 1, fillColor: '#16a34a', fillOpacity: 0.85 };
       return { radius: 6, color: '#7c2d12', weight: 2, fillColor: '#ef4444', fillOpacity: 0.95 };
+    }
+
+    function initOverviewCard() {
+      const OverviewControl = L.Control.extend({
+        onAdd() {
+          const container = L.DomUtil.create('div', 'overview-card');
+          container.innerHTML = `
+            <p class="overview-title">Prince Edward Island Overview</p>
+            <div id="pei-overview-map" class="overview-map"></div>
+            <div class="overview-note">Soft amber feather marks the LiDAR coverage transition.</div>
+          `;
+          L.DomEvent.disableClickPropagation(container);
+          L.DomEvent.disableScrollPropagation(container);
+          return container;
+        }
+      });
+
+      map.addControl(new OverviewControl({ position: 'bottomleft' }));
+
+      overviewMap = L.map('pei-overview-map', {
+        zoomControl: false,
+        attributionControl: false,
+        dragging: false,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        boxZoom: false,
+        keyboard: false,
+        tap: false,
+        touchZoom: false
+      });
+
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(overviewMap);
+
+      const peiBounds = L.latLngBounds(
+        [45.9, -64.5],
+        [47.2, -61.8]
+      );
+      overviewMap.fitBounds(peiBounds);
+      L.rectangle(peiBounds, {
+        color: '#64748b',
+        weight: 1,
+        fillOpacity: 0,
+        interactive: false
+      }).addTo(overviewMap);
+
+      renderFeatheredLidarZone();
+    }
+
+    function renderFeatheredLidarZone() {
+      if (!overviewMap) return;
+
+      const featherLayer = L.layerGroup().addTo(overviewMap);
+      const featherPads = [0.75, 0.52, 0.34, 0.2, 0.1, 0.03];
+      const featherOpacity = [0.02, 0.035, 0.05, 0.07, 0.09, 0.12];
+      featherPads.forEach((pad, idx) => {
+        L.rectangle(lidarCoverageBounds.pad(pad), {
+          color: '#f59e0b',
+          weight: 0,
+          fillColor: '#f59e0b',
+          fillOpacity: featherOpacity[idx],
+          interactive: false
+        }).addTo(featherLayer);
+      });
+
+      L.rectangle(lidarCoverageBounds, {
+        color: '#f59e0b',
+        weight: 0,
+        fillColor: '#f59e0b',
+        fillOpacity: 0.14,
+        interactive: false
+      }).addTo(featherLayer);
     }
 
     fetch('./data/cemetery_clean.geojson')
@@ -150,6 +270,8 @@
       return div;
     };
     legend.addTo(map);
+
+    initOverviewCard();
   </script>
 </body>
 </html>
