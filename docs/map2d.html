@@ -43,6 +43,30 @@
     }
     .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; }
     .subtle { color:#46535b; }
+    .mode-switch {
+      position: absolute;
+      top: 72px;
+      right: 12px;
+      z-index: 900;
+      display: flex;
+      gap: 8px;
+    }
+    .mode-btn {
+      text-decoration: none;
+      background: rgba(255, 251, 244, 0.95);
+      border: 1px solid #cabfae;
+      border-radius: 999px;
+      color: var(--ink);
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 700;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    .mode-btn.active {
+      background: #0f766e;
+      color: #fff;
+      border-color: #0a5a54;
+    }
   </style>
 </head>
 <body>
@@ -50,6 +74,10 @@
     <h1>St. Andrew's Point Pioneer Cemetery - 2D Interactive Map</h1>
     <p class="subtle">OpenTopoMap base with local NRCan 1m hillshade overlay and georeferenced points derived from grid coordinates.</p>
   </header>
+  <div class="mode-switch">
+    <a class="mode-btn active" href="./map2d.html">2D</a>
+    <a class="mode-btn" href="./map3d.html">3D</a>
+  </div>
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>

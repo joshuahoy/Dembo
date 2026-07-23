@@ -35,10 +35,48 @@
     .row select, .row input[type="range"] { flex: 1; }
     .legend { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; }
     .swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+    .mode-switch {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 3;
+      display: flex;
+      gap: 8px;
+    }
+    .mode-btn {
+      text-decoration: none;
+      background: rgba(255, 251, 244, 0.95);
+      border: 1px solid var(--edge);
+      border-radius: 999px;
+      color: var(--ink);
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 700;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    .mode-btn.active {
+      background: #0f766e;
+      color: #fff;
+      border-color: #0a5a54;
+    }
+    .poi {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.35);
+    }
+    .poi.surface { background: #f59e0b; }
+    .poi.subterranean { background: #22c55e; }
+    .poi.anchor { background: #ef4444; width: 12px; height: 12px; }
   </style>
 </head>
 <body>
   <div id="map"></div>
+  <div class="mode-switch">
+    <a class="mode-btn" href="./map2d.html">2D</a>
+    <a class="mode-btn active" href="./map3d.html">3D</a>
+  </div>
   <div class="panel">
     <h1>St. Andrew's Point - 3D Terrain</h1>
     <div>Topographic basemap with local NRCan 1m terrain and no API keys.</div>
@@ -139,10 +177,10 @@
       map.setTerrain({ source: 'terrain', exaggeration: value });
     });
 
-    function colorFor(type) {
-      if (type === 'surface') return '#f59e0b';
-      if (type === 'subterranean') return '#22c55e';
-      return '#ef4444';
+    function clsFor(type) {
+      if (type === 'surface') return 'surface';
+      if (type === 'subterranean') return 'subterranean';
+      return 'anchor';
     }
 
     map.on('load', async () => {
@@ -154,55 +192,16 @@
       const response = await fetch('./data/cemetery_clean.geojson');
       const gj = await response.json();
 
-      const styled = {
-        type: 'FeatureCollection',
-        features: gj.features.map((f) => ({
-          ...f,
-          properties: {
-            ...f.properties,
-            markerColor: colorFor(f.properties?.point_type)
-          }
-        }))
-      };
+      const features = (gj && gj.features) ? gj.features : [];
 
-      map.addSource('cemetery-points', { type: 'geojson', data: styled });
-
-      map.addLayer({
-        id: 'point-halo',
-        type: 'circle',
-        source: 'cemetery-points',
-        paint: {
-          'circle-color': '#081018',
-          'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            14, 2,
-            18, 4
-          ],
-          'circle-opacity': 0.6
-        }
-      });
-
-      map.addLayer({
-        id: 'point-core',
-        type: 'circle',
-        source: 'cemetery-points',
-        paint: {
-          'circle-color': ['get', 'markerColor'],
-          'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            14, 1.5,
-            18, 3
-          ],
-          'circle-opacity': 0.95,
-          'circle-stroke-width': 0.5,
-          'circle-stroke-color': '#ffffff'
-        }
-      });
-
-      map.on('click', 'point-core', (e) => {
-        const feature = e.features && e.features[0];
-        if (!feature) return;
+      for (const feature of features) {
         const p = feature.properties || {};
+        const coords = feature.geometry && feature.geometry.coordinates;
+        if (!coords || coords.length < 2) continue;
+
+        const el = document.createElement('div');
+        el.className = `poi ${clsFor(p.point_type)}`;
+
         const html = [
           `<b>${p.point_type || 'point'} #${p.point_id || ''}</b>`,
           `Sheet: ${p.source_sheet || '-'}`,
@@ -211,23 +210,24 @@
           p.grid_context ? `Context: ${p.grid_context}` : null
         ].filter(Boolean).join('<br>');
 
-        new maplibregl.Popup({ closeButton: true })
-          .setLngLat(e.lngLat)
-          .setHTML(html)
+        const popup = new maplibregl.Popup({ offset: 16, closeButton: true }).setHTML(html);
+        new maplibregl.Marker({ element: el, anchor: 'center' })
+          .setLngLat([coords[0], coords[1]])
+          .setPopup(popup)
           .addTo(map);
-      });
-
-      map.on('mouseenter', 'point-core', () => map.getCanvas().style.cursor = 'pointer');
-      map.on('mouseleave', 'point-core', () => map.getCanvas().style.cursor = '');
+      }
 
       const bounds = new maplibregl.LngLatBounds();
-      for (const f of styled.features) {
+      for (const f of features) {
         const c = f.geometry.coordinates;
         bounds.extend([c[0], c[1]]);
       }
       if (!bounds.isEmpty()) {
         map.fitBounds(bounds, { padding: 50, duration: 1200, pitch: 62, bearing: 20 });
       }
+    }).catch((err) => {
+      console.error(err);
+      alert('Could not load GeoJSON data. Ensure docs/data/cemetery_clean.geojson exists.');
     });
   </script>
 </body>
