@@ -177,7 +177,9 @@ def write_hillshade_tiles(hillshade_3857: Path, out_tiles_dir: Path) -> None:
                 height = 256
                 transform = from_bounds(b.left, b.bottom, b.right, b.top, width, height)
 
-                arr = np.zeros((1, height, width), dtype=np.uint8)
+                # Build hillshade intensity plus alpha so out-of-coverage pixels are transparent.
+                arr = np.zeros((height, width), dtype=np.uint8)
+                alpha = np.zeros((height, width), dtype=np.uint8)
                 reproject(
                     source=rasterio.band(src, 1),
                     destination=arr,
@@ -186,8 +188,26 @@ def write_hillshade_tiles(hillshade_3857: Path, out_tiles_dir: Path) -> None:
                     dst_transform=transform,
                     dst_crs=src.crs,
                     resampling=Resampling.bilinear,
+                    src_nodata=src.nodata,
                     dst_nodata=0,
                 )
+
+                reproject(
+                    source=src.read_masks(1),
+                    destination=alpha,
+                    src_transform=src.transform,
+                    src_crs=src.crs,
+                    dst_transform=transform,
+                    dst_crs=src.crs,
+                    resampling=Resampling.nearest,
+                    dst_nodata=0,
+                )
+
+                rgba = np.zeros((4, height, width), dtype=np.uint8)
+                rgba[0] = arr
+                rgba[1] = arr
+                rgba[2] = arr
+                rgba[3] = alpha
 
                 out_dir = out_tiles_dir / str(z) / str(tile.x)
                 out_dir.mkdir(parents=True, exist_ok=True)
@@ -197,11 +217,11 @@ def write_hillshade_tiles(hillshade_3857: Path, out_tiles_dir: Path) -> None:
                     "driver": "PNG",
                     "height": height,
                     "width": width,
-                    "count": 1,
+                    "count": 4,
                     "dtype": "uint8",
                 }
                 with rasterio.open(out_png, "w", **profile) as dst:
-                    dst.write(arr)
+                    dst.write(rgba)
 
 
 def write_dem_terrain_rgb_tiles(dem_3857: Path, out_tiles_dir: Path) -> None:
