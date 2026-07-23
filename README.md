@@ -3,6 +3,10 @@
 This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xlsx` into georeferenced point data and publishes an interactive 2D map that can be hosted on GitHub Pages without API keys.
 https://joshuahoy.github.io/Dembo/
 
+## Research context
+
+This research investigates African cultural retention and embodied resistance within the burial landscape of the St. Andrew’s Point Pioneer Cemetery in PEI—an understudied site in the Northeast Atlantic African Diaspora. Central to this site’s history is Dembo Suckles, who was taken from Benin as a teenager and enslaved through regional Atlantic networks, and whom oral traditions identify as being buried at the site alongside his family. A preliminary archaeological survey reveals burial markers and spatial patterns suggesting syncretic West African and European mortuary traditions, including possible slab-stone grave coverings, west‑facing orientations linked to “homecoming” symbolism, and paired sandstone head‑and‑foot markers. These material choices indicate how the Suckles family expressed belonging, memory, and spiritual continuity despite displacement and structural erasure. By situating PEI within broader diasporic movements, this study demonstrates how mortuary practice served as acts of resistance and cultural retention, illuminating understandings of agency and spiritual continuity in life and death.
+
 ## What is included
 
 - `scripts/00_inspect_excel.py` - quick workbook schema inspection.
