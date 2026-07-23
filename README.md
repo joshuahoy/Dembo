@@ -1,6 +1,7 @@
 # St. Andrew's Point Pioneer Cemetery Interactive Maps
 
 This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xlsx` into georeferenced point data and publishes interactive 2D and 3D maps that can be hosted on GitHub Pages without API keys.
+https://joshuahoy.github.io/Dembo/
 
 ## What is included
 
@@ -39,15 +40,6 @@ C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe -m http.serv
 ```
 
 4. Visit `http://localhost:8080/docs/`.
-
-## Publish on GitHub Pages (docs on main)
-
-1. Push this folder contents to the `main` branch of `joshuahoy/Dembo`.
-2. In repository Settings -> Pages:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/docs`
-3. Save settings and wait for the Pages URL to build.
 
 ## Data method summary
 
