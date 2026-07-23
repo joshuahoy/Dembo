@@ -60,15 +60,16 @@
       border-color: #0a5a54;
     }
     .poi {
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
       border: 1px solid #fff;
       box-shadow: 0 0 0 1px rgba(0,0,0,0.35);
+      transform-origin: center center;
     }
     .poi.surface { background: #f59e0b; }
     .poi.subterranean { background: #22c55e; }
-    .poi.anchor { background: #ef4444; width: 12px; height: 12px; }
+    .poi.anchor { background: #ef4444; width: 14px; height: 14px; }
   </style>
 </head>
 <body>
@@ -108,6 +109,7 @@
       zoom: 16.8,
       pitch: 65,
       bearing: 18,
+      maxZoom: 21,
       maxPitch: 80,
       style: {
         version: 8,
@@ -130,7 +132,7 @@
             tiles: ['./tiles/nrcan_dem_terrarium/{z}/{x}/{y}.png'],
             tileSize: 256,
             encoding: 'terrarium',
-            maxzoom: 16,
+            maxzoom: 19,
             attribution: 'Elevation: NRCan HRDEM 1m (PEI 2020), terrarium encoding (local)'
           }
         },
@@ -183,6 +185,23 @@
       return 'anchor';
     }
 
+    const markerEls = [];
+
+    function markerScaleForZoom(z) {
+      if (z >= 20) return 2.2;
+      if (z >= 19) return 1.9;
+      if (z >= 18) return 1.6;
+      if (z >= 17) return 1.35;
+      return 1.0;
+    }
+
+    function refreshMarkerScale() {
+      const scale = markerScaleForZoom(map.getZoom());
+      for (const el of markerEls) {
+        el.style.transform = `scale(${scale})`;
+      }
+    }
+
     map.on('load', async () => {
       if (!map.getLayer('osm')) {
         map.addLayer({ id: 'osm', type: 'raster', source: 'osm' }, 'topo');
@@ -201,6 +220,7 @@
 
         const el = document.createElement('div');
         el.className = `poi ${clsFor(p.point_type)}`;
+        markerEls.push(el);
 
         const html = [
           `<b>${p.point_type || 'point'} #${p.point_id || ''}</b>`,
@@ -225,6 +245,9 @@
       if (!bounds.isEmpty()) {
         map.fitBounds(bounds, { padding: 50, duration: 1200, pitch: 62, bearing: 20 });
       }
+
+      refreshMarkerScale();
+      map.on('zoom', refreshMarkerScale);
     }).catch((err) => {
       console.error(err);
       alert('Could not load GeoJSON data. Ensure docs/data/cemetery_clean.geojson exists.');

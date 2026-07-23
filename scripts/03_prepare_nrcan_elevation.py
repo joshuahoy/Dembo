@@ -160,8 +160,6 @@ def clip_raster(src_path: Path, dst_path: Path, bbox_4326: Tuple[float, float, f
 
 
 def write_hillshade_tiles(hillshade_3857: Path, out_tiles_dir: Path) -> None:
-    if out_tiles_dir.exists():
-        shutil.rmtree(out_tiles_dir)
     out_tiles_dir.mkdir(parents=True, exist_ok=True)
 
     with rasterio.open(hillshade_3857) as src:
@@ -207,8 +205,6 @@ def write_hillshade_tiles(hillshade_3857: Path, out_tiles_dir: Path) -> None:
 
 
 def write_dem_terrain_rgb_tiles(dem_3857: Path, out_tiles_dir: Path) -> None:
-    if out_tiles_dir.exists():
-        shutil.rmtree(out_tiles_dir)
     out_tiles_dir.mkdir(parents=True, exist_ok=True)
 
     with rasterio.open(dem_3857) as src:
@@ -216,7 +212,7 @@ def write_dem_terrain_rgb_tiles(dem_3857: Path, out_tiles_dir: Path) -> None:
         minx, miny, maxx, maxy = bbox4326
 
         z_min = 14
-        z_max = 16
+        z_max = 19
 
         for z in range(z_min, z_max + 1):
             tiles = list(mercantile.tiles(minx, miny, maxx, maxy, [z]))
@@ -370,7 +366,7 @@ def main() -> None:
         },
         "tile_zoom_ranges": {
             "hillshade": [14, 19],
-            "terrain": [14, 16],
+            "terrain": [14, 19],
         },
     }
 
