@@ -124,6 +124,7 @@
     const subterraneanLayer = L.layerGroup().addTo(map);
     const anchorLayer = L.layerGroup().addTo(map);
     let overviewMap = null;
+    let overviewViewportLayer = null;
 
     const lidarCoverageBounds = L.latLngBounds(
       [46.149382, -62.535577952380955],
@@ -155,7 +156,7 @@
           container.innerHTML = `
             <p class="overview-title">Prince Edward Island Overview</p>
             <div id="pei-overview-map" class="overview-map"></div>
-            <div class="overview-note">Soft amber feather marks the LiDAR coverage transition.</div>
+            <div class="overview-note">Red square shows the current zoomed area; amber feather marks LiDAR transition.</div>
           `;
           L.DomEvent.disableClickPropagation(container);
           L.DomEvent.disableScrollPropagation(container);
@@ -195,6 +196,8 @@
       }).addTo(overviewMap);
 
       renderFeatheredLidarZone();
+      updateOverviewViewport();
+      map.on('moveend zoomend', updateOverviewViewport);
     }
 
     function renderFeatheredLidarZone() {
@@ -220,6 +223,23 @@
         fillOpacity: 0.14,
         interactive: false
       }).addTo(featherLayer);
+    }
+
+    function updateOverviewViewport() {
+      if (!overviewMap) return;
+      const currentBounds = map.getBounds();
+      if (!currentBounds || !currentBounds.isValid()) return;
+
+      if (overviewViewportLayer) {
+        overviewMap.removeLayer(overviewViewportLayer);
+      }
+
+      overviewViewportLayer = L.rectangle(currentBounds, {
+        color: '#dc2626',
+        weight: 2,
+        fillOpacity: 0,
+        interactive: false
+      }).addTo(overviewMap);
     }
 
     fetch('./data/cemetery_clean.geojson')
