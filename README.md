@@ -1,6 +1,6 @@
 # St. Andrew's Point Pioneer Cemetery Interactive Maps
 
-This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xlsx` into georeferenced point data and publishes interactive 2D and 3D maps that can be hosted on GitHub Pages without API keys.
+This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xlsx` into georeferenced point data and publishes an interactive 2D map that can be hosted on GitHub Pages without API keys.
 https://joshuahoy.github.io/Dembo/
 
 ## What is included
@@ -13,10 +13,8 @@ https://joshuahoy.github.io/Dembo/
 - `validation/coordinate_report.txt` - QA summary and transform residuals.
 - `docs/index.html` - landing page for GitHub Pages.
 - `docs/map2d.html` - 2D interactive topographic map (Leaflet + OpenTopoMap).
-- `docs/map3d.html` - 3D interactive topographic terrain map (MapLibre + hillshade).
-- `docs/data/cemetery_clean.geojson` - hosted map data used by 2D and 3D pages.
+- `docs/data/cemetery_clean.geojson` - hosted map data used by the 2D page.
 - `docs/tiles/nrcan_hillshade/` - local XYZ hillshade PNG tiles (generated).
-- `docs/tiles/nrcan_dem_terrarium/` - local XYZ Terrarium DEM tiles for 3D terrain (generated).
 
 ## Run locally
 
@@ -27,7 +25,7 @@ https://joshuahoy.github.io/Dembo/
 C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe scripts/01_validate_and_export.py
 ```
 
-3. Build local NRCan elevation tiles (2D and 3D terrain):
+3. Build local NRCan elevation tiles (2D hillshade):
 
 ```powershell
 C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe scripts/03_prepare_nrcan_elevation.py

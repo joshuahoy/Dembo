@@ -278,7 +278,6 @@ def main() -> None:
 
     print("Selected tile IDs:", selected)
 
-    dem_files = []
     hs_files = []
 
     for tile_id in selected:
@@ -287,32 +286,9 @@ def main() -> None:
         dem_path = RAW_DIR / dem_name
         hs_path = RAW_DIR / hs_name
 
-        download_if_missing(f"{UTM_BASE_URL}{dem_name}", dem_path)
         download_if_missing(f"{UTM_BASE_URL}{hs_name}", hs_path)
 
-        dem_files.append(str(dem_path))
         hs_files.append(str(hs_path))
-
-    print("Merging DEM tiles...")
-    dem_srcs = [rasterio.open(p) for p in dem_files]
-    dem_merged, dem_transform = merge(dem_srcs)
-    dem_meta = dem_srcs[0].meta.copy()
-    dem_meta.update(
-        {
-            "height": dem_merged.shape[1],
-            "width": dem_merged.shape[2],
-            "transform": dem_transform,
-            "compress": "deflate",
-            "tiled": True,
-            "blockxsize": 512,
-            "blockysize": 512,
-        }
-    )
-    dem_mosaic = WORK_DIR / "dem_mosaic.tif"
-    with rasterio.open(dem_mosaic, "w", **dem_meta) as dst:
-        dst.write(dem_merged)
-    for s in dem_srcs:
-        s.close()
 
     print("Merging hillshade tiles...")
     hs_srcs = [rasterio.open(p) for p in hs_files]
@@ -335,38 +311,27 @@ def main() -> None:
     for s in hs_srcs:
         s.close()
 
-    print("Clipping mosaics to AOI...")
-    dem_clip = WORK_DIR / "dem_clip_utm20.tif"
+    print("Clipping hillshade mosaic to AOI...")
     hs_clip = WORK_DIR / "hillshade_clip_utm20.tif"
-    clip_raster(dem_mosaic, dem_clip, bbox)
     clip_raster(hs_mosaic, hs_clip, bbox)
 
-    print("Reprojecting to EPSG:3857...")
-    dem_3857 = OUT_DIR / "dem_clip_3857.tif"
+    print("Reprojecting hillshade to EPSG:3857...")
     hs_3857 = OUT_DIR / "hillshade_clip_3857.tif"
-    reproject_to_3857(dem_clip, dem_3857)
     reproject_to_3857(hs_clip, hs_3857)
 
     print("Generating hillshade XYZ PNG tiles...")
     hs_tiles = DOCS_TILES / "nrcan_hillshade"
     write_hillshade_tiles(hs_3857, hs_tiles)
 
-    print("Generating terrain-rgb (Terrarium) XYZ PNG tiles...")
-    dem_tiles = DOCS_TILES / "nrcan_dem_terrarium"
-    write_dem_terrain_rgb_tiles(dem_3857, dem_tiles)
-
     summary = {
         "bbox_lonlat": bbox,
         "selected_tile_ids": selected,
         "outputs": {
-            "dem_3857": str(dem_3857),
             "hillshade_3857": str(hs_3857),
             "hillshade_tiles": str(hs_tiles),
-            "terrain_tiles": str(dem_tiles),
         },
         "tile_zoom_ranges": {
             "hillshade": [14, 19],
-            "terrain": [14, 19],
         },
     }
 
