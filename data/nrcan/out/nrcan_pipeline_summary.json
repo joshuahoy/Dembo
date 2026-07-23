@@ -1,0 +1,27 @@
+{
+  "bbox_lonlat": [
+    -62.52757795238096,
+    46.157382,
+    -62.523444,
+    46.161855
+  ],
+  "selected_tile_ids": [
+    "1m_utm20_e_3_111"
+  ],
+  "outputs": {
+    "dem_3857": "C:\\Users\\HOYJOS1\\OneDrive - Government of Ontario\\Desktop\\Not Work\\SAPPC\\data\\nrcan\\out\\dem_clip_3857.tif",
+    "hillshade_3857": "C:\\Users\\HOYJOS1\\OneDrive - Government of Ontario\\Desktop\\Not Work\\SAPPC\\data\\nrcan\\out\\hillshade_clip_3857.tif",
+    "hillshade_tiles": "C:\\Users\\HOYJOS1\\OneDrive - Government of Ontario\\Desktop\\Not Work\\SAPPC\\docs\\tiles\\nrcan_hillshade",
+    "terrain_tiles": "C:\\Users\\HOYJOS1\\OneDrive - Government of Ontario\\Desktop\\Not Work\\SAPPC\\docs\\tiles\\nrcan_dem_terrarium"
+  },
+  "tile_zoom_ranges": {
+    "hillshade": [
+      14,
+      19
+    ],
+    "terrain": [
+      14,
+      16
+    ]
+  }
+}

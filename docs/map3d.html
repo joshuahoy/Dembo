@@ -41,7 +41,7 @@
   <div id="map"></div>
   <div class="panel">
     <h1>St. Andrew's Point - 3D Terrain</h1>
-    <div>Topographic basemap with hillshade and no API keys.</div>
+    <div>Topographic basemap with local NRCan 1m terrain and no API keys.</div>
     <div class="controls">
       <div class="row">
         <label for="basemapSel">Basemap</label>
@@ -89,11 +89,11 @@
           },
           terrain: {
             type: 'raster-dem',
-            tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+            tiles: ['./tiles/nrcan_dem_terrarium/{z}/{x}/{y}.png'],
             tileSize: 256,
             encoding: 'terrarium',
-            maxzoom: 14,
-            attribution: 'Elevation: Mapzen Terrarium (AWS mirror)'
+            maxzoom: 16,
+            attribution: 'Elevation: NRCan HRDEM 1m (PEI 2020), terrarium encoding (local)'
           }
         },
         layers: [

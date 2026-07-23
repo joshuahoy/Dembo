@@ -1,0 +1,10 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# NRCan processing intermediates and large source rasters
+data/nrcan/raw/
+data/nrcan/work/
+
+# Keep only lightweight publish summary from out/
+data/nrcan/out/*.tif

@@ -6,6 +6,7 @@ This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xls
 
 - `scripts/00_inspect_excel.py` - quick workbook schema inspection.
 - `scripts/01_validate_and_export.py` - coordinate validation, georeferencing, and export.
+- `scripts/03_prepare_nrcan_elevation.py` - downloads and processes NRCan 1m DEM/hillshade tiles for local web mapping.
 - `data/cemetery_clean.csv` - cleaned tabular output.
 - `data/cemetery_clean.geojson` - canonical geospatial output.
 - `validation/coordinate_report.txt` - QA summary and transform residuals.
@@ -13,6 +14,8 @@ This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xls
 - `docs/map2d.html` - 2D interactive topographic map (Leaflet + OpenTopoMap).
 - `docs/map3d.html` - 3D interactive topographic terrain map (MapLibre + hillshade).
 - `docs/data/cemetery_clean.geojson` - hosted map data used by 2D and 3D pages.
+- `docs/tiles/nrcan_hillshade/` - local XYZ hillshade PNG tiles (generated).
+- `docs/tiles/nrcan_dem_terrarium/` - local XYZ Terrarium DEM tiles for 3D terrain (generated).
 
 ## Run locally
 
@@ -23,7 +26,13 @@ This project converts the workbook `St. Andrew's Point Pioneer Cemetery Data.xls
 C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe scripts/01_validate_and_export.py
 ```
 
-3. Open `docs/index.html` in a local web server for reliable fetch behavior:
+3. Build local NRCan elevation tiles (2D and 3D terrain):
+
+```powershell
+C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe scripts/03_prepare_nrcan_elevation.py
+```
+
+4. Open `docs/index.html` in a local web server for reliable fetch behavior:
 
 ```powershell
 C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe -m http.server 8080
@@ -51,5 +60,4 @@ C:/Users/HOYJOS1/AppData/Local/Python/pythoncore-3.14-64/python.exe -m http.serv
 
 - OpenStreetMap contributors for map data and alternate raster tiles.
 - OpenTopoMap (CC-BY-SA) style tiles with SRTM terrain context.
-- Wikimedia hillshading tiles for 2D terrain shading.
-- Mapzen Terrarium elevation tiles (AWS public mirror) for 3D terrain.
+- Natural Resources Canada high-resolution 1m DTM/Hillshade (PEI 2020) for local elevation layers.

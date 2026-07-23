@@ -48,7 +48,7 @@
 <body>
   <header>
     <h1>St. Andrew's Point Pioneer Cemetery - 2D Interactive Map</h1>
-    <p class="subtle">OpenTopoMap base with optional hillshade overlay and georeferenced points derived from grid coordinates.</p>
+    <p class="subtle">OpenTopoMap base with local NRCan 1m hillshade overlay and georeferenced points derived from grid coordinates.</p>
   </header>
   <div id="map"></div>
 
@@ -73,11 +73,11 @@
       attribution: '&copy; OpenStreetMap contributors'
     });
 
-    const hillshade = L.tileLayer('https://tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png', {
+    const hillshade = L.tileLayer('./tiles/nrcan_hillshade/{z}/{x}/{y}.png', {
       opacity: 0.45,
-      maxNativeZoom: 18,
+      maxNativeZoom: 19,
       maxZoom: 20,
-      attribution: 'Hillshade: Wikimedia Labs'
+      attribution: 'Hillshade: NRCan HRDEM 1m (PEI 2020)'
     }).addTo(map);
 
     const surfaceLayer = L.layerGroup().addTo(map);
